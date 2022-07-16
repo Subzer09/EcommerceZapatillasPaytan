@@ -1,12 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from "./components/NavBar";
 
 function App() {
-  let nombreIdea = "Ecommerce Zapatillas Jimmy Paytan"
+  let nombreTienda = "SHOES SHOP"
   return (
-    <div className="App">
-      <h1>{ nombreIdea }</h1>
-    </div>
+      <>
+        <div className="row">
+            <div className="col-lg-12">
+                <NavBar title={nombreTienda} />
+            </div>
+        </div>
+      </>
   );
 }
 
