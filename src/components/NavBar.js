@@ -1,5 +1,6 @@
 
 import logoMini from  '../assets/logo/logoi-mini-white.png'
+import CardWidget from "./CardWidget";
 
 function NavBar({ title }) {
     return (
@@ -28,6 +29,7 @@ function NavBar({ title }) {
                             <li className="nav-item">
                                 <a className="nav-link text-white" href="#">Contactanos</a>
                             </li>
+                            <CardWidget />
                         </ul>
                     </div>
                 </div>
