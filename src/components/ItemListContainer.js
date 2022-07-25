@@ -1,9 +1,19 @@
+import ItemCount from "./ItemCount";
 
+function ItemListContainer({greeting}) {
 
-function ItemListContainer() {
+    const onAdd = (cant) => {
+        console.log(`Has agregado ${cant} item al carrito!!!`)
+    }
+
     return (
         <>
-        Item List Container
+            <main className="row">
+                <div className="col-12">
+                    <h1>{ greeting }</h1>
+                </div>
+                <ItemCount stock={10} initial={1} onAdd={onAdd} />
+            </main>
         </>
     )
 }
